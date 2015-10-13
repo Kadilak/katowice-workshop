@@ -2,6 +2,9 @@ class SubjectItem < ActiveRecord::Base
   has_many :participations, dependent: :destroy
   has_many :students, through: :participations
   has_many :subject_item_notes
+  belongs_to :teacher
+
+  accepts_nested_attributes_for :teacher
 
   validates :title, presence: true
 

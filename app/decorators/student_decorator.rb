@@ -4,5 +4,8 @@ class StudentDecorator < BaseDecorator
   end
 
   def avg_notes(subject_item)
+  	values = subject_item.subject_item_notes.map(&:value)
+  	return '0.00' unless values.size > 0
+  	format("%.2f",values.sum.to_f/values.size)
   end
 end

@@ -1,3 +1,4 @@
+require 'spec/support/features/session_helpers'
 module Features
   module SessionHelpers
     def sign_up_with(email, password)

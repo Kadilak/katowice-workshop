@@ -8,4 +8,11 @@ class StudentDecorator < BaseDecorator
   	return '0.00' unless values.size > 0
   	format("%.2f",values.sum.to_f/values.size)
   end
+
+  def birthdateformat
+
+  	
+  	return "-" unless student.birthdate.present?
+  	return student.birthdate.strftime('%Y-%m_%d') 
+  end
 end

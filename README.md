@@ -21,7 +21,7 @@ RoR Workshops - Fixed
 #### :white_check_mark: Things that were done
 
 * all tests should pass
-* added badge and ensure your application has "build | passing status" 
+* added badge and application has "build | passing status" 
 * application on heroku: https://vast-atoll-5048.herokuapp.com/
 * added `birthdate` column to `Student` model.
   * column is optional,

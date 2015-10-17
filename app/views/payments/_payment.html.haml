@@ -1,0 +1,9 @@
+%tr
+  %td= payment.student.first_name
+  %td= payment.payment_date
+  %td= payment.year
+  %td= payment.month
+  %td
+    =link_to payment_path(payment.id), { method: :delete, title: t('shared.delete') } do
+      %button.btn.btn-default
+        = fa_icon "times"

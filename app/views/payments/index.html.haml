@@ -1,0 +1,10 @@
+%table.table.table-condensed
+  %thead
+    %tr
+      %th= t('payment.columns.first_name')
+      %th= t('payment.columns.payment_date')
+      %th= t('payment.columns.year')
+      %th= t('payment.columns.month')
+      %th= t('shared.actions')
+  %tbody
+    = render payments

@@ -1,0 +1,8 @@
+= simple_form_for [student, payment]  do |f|
+  = f.input :payment_date
+  = f.label "Select the period you want to pay"
+  = f.input :year, collection: 2010..2020
+  = f.input :month, collection: 1..12
+  = f.hidden_field :student_id
+  = link_to t('shared.back'), student_path(student), class: 'btn btn-default'
+  = f.button :submit

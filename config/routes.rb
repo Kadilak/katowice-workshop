@@ -7,6 +7,11 @@ Rails.application.routes.draw do
     get :subjects
   end
 
+  resources :student do
+    resources :payments, only: [:new, :create]
+  end
+  resources :payments, only: [:index, :destroy]
+
   resources :teachers do
   	get :subjects
   end

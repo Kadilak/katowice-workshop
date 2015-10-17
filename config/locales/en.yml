@@ -21,6 +21,8 @@ en:
     add_new_item: Add new one
     add_new_payment: Add payment
     subjects: subjects
+    payment: Payment
+
   student:
     columns:
       first_name: first name

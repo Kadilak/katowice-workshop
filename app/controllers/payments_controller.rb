@@ -4,6 +4,8 @@ class PaymentsController < ApplicationController
 	expose(:payment, attributes: :payment_params)
 	expose(:payments) { student.payments }
 
+  before_action :authenticate_user!
+
 	def index
 		self.payments = Payment.all
 	end
